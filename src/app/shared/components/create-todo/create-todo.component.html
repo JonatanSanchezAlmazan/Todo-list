@@ -1,0 +1,15 @@
+<div
+class="create-todo">
+<input
+  type="text"
+  #createTodoInput
+  class="create-todo__input"
+  placeholder="Crea tu nueva tarea">
+  <div>
+    <button
+    class="create-todo__button"
+    (click)="create(createTodoInput)">
+  Añadir Tarea</button>
+  <button (click)="deleteAllTodos()" class="create-todo__button">Eliminar todo</button>
+  </div>
+</div>
